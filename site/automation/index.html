@@ -1,0 +1,849 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.5">
+    
+    
+      
+        <title>Hướng dẫn thiết lập tự động hóa trong ứng dụng Javis Smart - Javis Smart</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.15aa0b43.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.75751829.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hen-gio" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="Javis Smart" class="md-header-nav__button md-logo" aria-label="Javis Smart">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            Javis Smart
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Hướng dẫn thiết lập tự động hóa trong ứng dụng Javis Smart
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Javis Smart" class="md-nav__button md-logo" aria-label="Javis Smart">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Javis Smart
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../network-connections/" class="md-nav__link">
+        Các bước kết nối mạng cho Javis HC
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install-app/" class="md-nav__link">
+        Cài ứng dụng Javis Smart và đăng ký tài khoản
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connect-with-app/" class="md-nav__link">
+        Kết nối Javis HC vào ứng dụng Javis Smart trên điện thoại
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../work-with-room/" class="md-nav__link">
+        Các thao tác với phòng trong Javis Smart
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../add-zigbee/" class="md-nav__link">
+        Thêm công tắc Zigbee vào ứng dụng Javis Smart
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connection-with-zigbee/" class="md-nav__link">
+        Kết nối cảm biến Zigbee vào ứng dụng Javis Smart
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../create-script/" class="md-nav__link">
+        Hướng dẫn tạo kịch bản trong ứng dụng Javis Smart
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Hướng dẫn thiết lập tự động hóa trong ứng dụng Javis Smart
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Hướng dẫn thiết lập tự động hóa trong ứng dụng Javis Smart
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hen-gio" class="md-nav__link">
+    Hẹn giờ
+  </a>
+  
+    <nav class="md-nav" aria-label="Hẹn giờ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hen-gio-voi-cong-tac-wifi-khong-dung-bo-trung-tam-javis-hc" class="md-nav__link">
+    Hẹn giờ với công tắc Wifi (không dùng bộ trung tâm JAVIS HC)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hen-gio-khi-dung-bo-trung-tam-javis-hc" class="md-nav__link">
+    Hẹn giờ khi dùng bộ trung tâm JAVIS HC
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ong-bo-trang-thai" class="md-nav__link">
+    Đồng bộ trạng thái
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tu-ong-nha-ve-sinh" class="md-nav__link">
+    Tự động nhà vệ sinh
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bat-tat-theo-trang-thai-cua" class="md-nav__link">
+    Bật tắt theo trạng thái cửa
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bat-tat-theo-chuyen-ong" class="md-nav__link">
+    Bật tắt theo chuyển động
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thiet-bi-thay-oi-trang-thai" class="md-nav__link">
+    Thiết bị thay đổi trạng thái
+  </a>
+  
+    <nav class="md-nav" aria-label="Thiết bị thay đổi trạng thái">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#861" class="md-nav__link">
+    8.6.1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-nut-kich-ban" class="md-nav__link">
+    “Remote, nút kịch bản”
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../update-new-device/" class="md-nav__link">
+        Cập nhập thiết bị mới từ Javis HC vào ứng dụng Javis Smart
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../voice-control/" class="md-nav__link">
+        Điều khiển bằng giọng nói trong ứng dụng Javis Smart
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../add-device/" class="md-nav__link">
+        Thêm thiết bị vào màn hình yêu thích và các thao tác cơ bản trong ứng dụng Javis Smart
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../add-switch/" class="md-nav__link">
+        Thêm công tắc Wifi Javis vào ứng dụng Javis Smart
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mqtt-wifi/" class="md-nav__link">
+        Cấu hình MQTT cho công tắc Wifi
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hen-gio" class="md-nav__link">
+    Hẹn giờ
+  </a>
+  
+    <nav class="md-nav" aria-label="Hẹn giờ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hen-gio-voi-cong-tac-wifi-khong-dung-bo-trung-tam-javis-hc" class="md-nav__link">
+    Hẹn giờ với công tắc Wifi (không dùng bộ trung tâm JAVIS HC)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hen-gio-khi-dung-bo-trung-tam-javis-hc" class="md-nav__link">
+    Hẹn giờ khi dùng bộ trung tâm JAVIS HC
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ong-bo-trang-thai" class="md-nav__link">
+    Đồng bộ trạng thái
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tu-ong-nha-ve-sinh" class="md-nav__link">
+    Tự động nhà vệ sinh
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bat-tat-theo-trang-thai-cua" class="md-nav__link">
+    Bật tắt theo trạng thái cửa
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bat-tat-theo-chuyen-ong" class="md-nav__link">
+    Bật tắt theo chuyển động
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#thiet-bi-thay-oi-trang-thai" class="md-nav__link">
+    Thiết bị thay đổi trạng thái
+  </a>
+  
+    <nav class="md-nav" aria-label="Thiết bị thay đổi trạng thái">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#861" class="md-nav__link">
+    8.6.1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-nut-kich-ban" class="md-nav__link">
+    “Remote, nút kịch bản”
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Hướng dẫn thiết lập tự động hóa trong ứng dụng Javis Smart</h1>
+                
+                <p><strong>Các bước thực hiện:</strong></p>
+<ul>
+<li>Tại màn hình chính của ứng dụng chọn "Tự động"/ "Tự động hóa" / "Chọn dấu +"</li>
+</ul>
+<p><img alt="" src="../assets/Hướng%20dẫn%20cài%20đặt%20JAVIS%20HC_V2.020.png" /></p>
+<ul>
+<li>Chọn 1 trong số những tự động hóa có sẵn và tiến hành đặt tên, chọn hành động, thiết bị thực hiện tương ứng.</li>
+</ul>
+<p><img alt="" src="../assets/Hướng%20dẫn%20cài%20đặt%20JAVIS%20HC_V2.021.png" /></p>
+<h2 id="hen-gio">Hẹn giờ</h2>
+<h3 id="hen-gio-voi-cong-tac-wifi-khong-dung-bo-trung-tam-javis-hc">Hẹn giờ với công tắc Wifi (không dùng bộ trung tâm JAVIS HC)</h3>
+<p>Tính năng này cho phép người dùng hẹn giờ bật, tắt thiết bị Wifi có trong hệ . Ví dụ: hẹn 5h bật bình nóng lạnh và tự động tắt 30 phút.</p>
+<ul>
+<li>Chọn “Hẹn giờ” =&gt; Chọn mã ID của công tắc muốn thiết lập hẹn giờ (hình công tắc 3 nút màu trắng).</li>
+</ul>
+<p><img alt="" src="../assets/Hướng%20dẫn%20cài%20đặt%20JAVIS%20HC_V2.022.png" /></p>
+<ul>
+<li>“Thời gian thực hiện”: Chọn thời gian bạn muốn hẹn giờ.</li>
+<li>“Ngày lặp lại”: Chọn những ngày trong tuần mà bạn muốn hẹ giờ</li>
+<li>“Chọn hành động”: Chọn hành động mà bạn muốn thiết bị thực hiện có sẵn trong danh sách.</li>
+<li>“Chọn thiết bị thực hiện”: Chọn những thiết bị có sẵn trong danh sách để thực hiện ứng với hành động bạn chọn ở bên trên.</li>
+</ul>
+<p><img alt="" src="../assets/Hướng%20dẫn%20cài%20đặt%20JAVIS%20HC_V2.023.png" /></p>
+<h3 id="hen-gio-khi-dung-bo-trung-tam-javis-hc">Hẹn giờ khi dùng bộ trung tâm JAVIS HC</h3>
+<p>Tính năng này cho phép người dùng hẹn giờ bật, tắt 1 thiết bị có trong hệ thống hoặc kích hoạt 1 kịch bản đã được tạo sẵn. Ví dụ: hẹn 10h kích hoạt kịch bản “Đi ngủ”.</p>
+<ul>
+<li>Chọn “Hẹn giờ” =&gt; Chọn mã ID của bộ trung tâm JAVI HC (hình ngôi nhà màu xanh).</li>
+</ul>
+<p><img alt="" src="../assets/Hướng%20dẫn%20cài%20đặt%20JAVIS%20HC_V2.024.png" /></p>
+<ul>
+<li>“Tên hẹn giờ”: Điền tên bạn muốn đặt.</li>
+<li>“Thời gian thực hiện”: Chọn thời gian bạn muốn hẹn giờ.</li>
+<li>“Ngày lặp lại”: Chọn những ngày trong tuần mà bạn muốn hẹ giờ</li>
+<li>“Chọn hành động”: Chọn hành động mà bạn muốn thiết bị thực hiện có sẵn trong danh sách.</li>
+<li>“Chọn thiết bị thực hiện”: Chọn những thiết bị có sẵn trong danh sách để thực hiện ứng với hành động bạn chọn ở bên trên.</li>
+</ul>
+<p><img alt="" src="../assets/Hướng%20dẫn%20cài%20đặt%20JAVIS%20HC_V2.023.png" /></p>
+<h2 id="ong-bo-trang-thai">Đồng bộ trạng thái</h2>
+<p>Tính năng này cho phép người dùng đồng bộ trạng thái của 2 công tắc hoặc đèn khác nhau có trong hệ thống. Ví dụ dùng để đồng bộ 2 công tắc đảo chiều đèn cầu thang.</p>
+<ul>
+<li>“Tên đồng bộ”: Đặt tên đồng bộ tương ứng.</li>
+<li>“Kiểu đồng bộ”: </li>
+<li>Đồng bộ một chiều: Thiết bị 1 điều khiển thiết bị 2, nhưng thiết bị 2 không thể điều khiển thiết bị 1.</li>
+<li>Đồng bộ hai chiều: Thiết bị 1 điều khiển thiết bị 2 và ngược lại.</li>
+<li>“Thiết bị 1”, “Thiết bị 2”: Chọn 2 thiết bị mà bạn muốn đồng bộ trạng thái.</li>
+</ul>
+<p><img alt="" src="../assets/Hướng%20dẫn%20cài%20đặt%20JAVIS%20HC_V2.025.png" /></p>
+<h2 id="tu-ong-nha-ve-sinh">Tự động nhà vệ sinh</h2>
+<p>Tính năng này cho phép bật tắt tự động đèn và các thiết bị trong nhà vệ sinh dựa theo cảm biến cửa và cảm biến chuyển động. </p>
+<p>Yêu cầu: cần lắp đặt công tắc thông minh, 1 cảm biến cửa và 1 cảm biến chuyển động ứng với nhà Vệ sinh cần thiết lập tự động.</p>
+<p><strong>Các trường hợp tự động nhà vệ sinh:</strong></p>
+<p>\1. Trường hợp cửa vệ sinh luôn đóng (đi ra hoặc đi vào đều đóng lại)</p>
+<p>1.1. Mở cửa thì đèn bật ngay lập tức</p>
+<p>1.2. Sau đó đóng cửa lại thì đèn KHÔNG tắt (cứ bật mãi) dù ngồi im không cử động.</p>
+<p>1.3. Mở cửa đi ra ngoài đèn tắt ngay lập tức</p>
+<p>\2. Trường hợp cửa vệ sinh luôn mở (đi ra không đóng kín cửa)</p>
+<p>2.1. Mở cửa vào đèn sẽ bật (chậm hơn 1.1 khoảng 1~2s)</p>
+<p>2.2. Nếu đóng cửa lại và ở trong đó thì đèn sẽ KHÔNG tắt( trong vòng 30p) dù ngồi im không cử động</p>
+<p>2.3. Nếu đi vào và KHÔNG đóng cửa, sau đó ngồi im thì đèn sẽ tắt khi không có chuyển động 1-2p</p>
+<p>2.4. Đi ra ngoài KHÔNG đóng cửa đèn sẽ tắt sau 1-2p</p>
+<p><strong>Những trường hợp chạy không chính xác (các trường hợp không phổ biến):</strong></p>
+<ul>
+<li>Trường hợp 2 người cùng vào nhà vệ sinh và đóng cửa lại, sau đó 1 người thứ 3 mở cửa vào hoặc 1 người ở trong mở cửa ra thì tính năng tự động chạy không đúng.</li>
+<li>Trường hợp 1 người vừa mở cửa ra không đóng lại (đèn đã tắt) nhưng quay lại ngay đèn sẽ không bật mà phải tầm 2p kịch bản tự bật mới có hiệu lực. Nguyên nhân do cảm biến chuyển động sau 2p mới cập nhật trạng thái từ có chuyển động sang không có chuyển động.</li>
+<li>Trường hợp 3: đi vào và không đóng cửa ngay. Sau đó đi ra lại đóng cửa lại.</li>
+</ul>
+<p><strong>Các bước thiết lập tự động Vệ sinh trên ứng dụng Javis Smart:</strong></p>
+<ul>
+<li>“Tên tự động”: Điền tên tự động tương ứng</li>
+<li>“Thời gian hiệu lực”: mặc định sẽ hoạt động cả ngày, nếu muốn giới hạn thời gian hoạt động có thể điều chỉnh tương ứng.</li>
+<li>“Cảm biến cửa”: Chọn cảm biến cửa WC</li>
+<li>“Cảm biến chuyển động”: Chọn cảm biến chuyển động WC</li>
+<li>“Thời gian tắt đèn sau khi cửa mở mà không có chuyển động”: Thời gian cài đặt tự động tắt đèn trong trường hợp cửa Wc mở, người sửa dụng WC nhanh sau đó đi ra thì sau thời gian cài đăth đèn sẽ tự động tắt.</li>
+<li>“Các thiết bị sẽ bật, tắt tự động”: Chọn đến các thiết bị trong WC mà bạn muốn bật tắt tự động (Đèn, quạt).</li>
+</ul>
+<p><img alt="" src="../assets/Hướng%20dẫn%20cài%20đặt%20JAVIS%20HC_V2.026.png" /></p>
+<h2 id="bat-tat-theo-trang-thai-cua">Bật tắt theo trạng thái cửa</h2>
+<p>Mục đích của tính năng này cho phép thiết lập tự động bật hoặc tắt đèn khi cửa mở.</p>
+<ul>
+<li>“Tên tự động”: Đặt tên tự động</li>
+<li>Có thể chọn hành động “Mở cửa bật đèn” hoặc “Đóng cửa tắt đèn”</li>
+<li>‘Cảm biến cửa”: Chọn cảm biến cửa bạn muốn thiết lập tự động</li>
+<li>“Các thiết bị sẽ bật tự động”: Chọn thiết bị mà bạn muốn bật, tắt tự động theo trạng thái cửa</li>
+<li>“Thời gian hiệu lực”: chỉnh sửa thời gian phù hợp</li>
+<li>“Độ trễ”: thời gian thiết bị sẽ bật, tắt sau khi cửa được đóng, mở</li>
+<li>Khi thiết lập xong nhấn “Lưu” để lưu lại.</li>
+</ul>
+<p><img alt="" src="../assets/Hướng%20dẫn%20cài%20đặt%20JAVIS%20HC_V2.027.png" /></p>
+<h2 id="bat-tat-theo-chuyen-ong">Bật tắt theo chuyển động</h2>
+<p>Mục đích của tính năng này cho phép thiết lập tự động bật hoặc tắt đèn khi có chuyển động. Ví dụ thiết lập tự bật đèn khi có chuyển động trong phòng khách trong khoảng thời gian từ 23h đến 6h sáng.</p>
+<ul>
+<li>“Tên tự động”: Đặt tên tự động</li>
+<li>Có thể chọn hành động “Có chuyển động bật đèn” hoặc “Không có chuyển động tắt đèn”</li>
+<li>‘Cảm biến chuyển động”: Chọn cảm biến chuyển động bạn muốn thiết lập tự động</li>
+<li>“Các thiết bị sẽ bật tự động”: Chọn thiết bị mà bạn muốn bật, tắt tự động theo trạng thái cảm biến chuyển động</li>
+<li>“Thời gian hiệu lực”: chỉnh sửa thời gian phù hợp</li>
+<li>“Độ trễ”: thời gian thiết bị sẽ bật, tắt sau khi có hoặc không có chuyển động</li>
+<li>Khi thiết lập xong nhấn “Lưu” để lưu lại.</li>
+</ul>
+<p><img alt="" src="../assets/Hướng%20dẫn%20cài%20đặt%20JAVIS%20HC_V2.028.png" /></p>
+<p>Video hướng dẫn:</p>
+<p><a href="https://javishome.vn/huong-dan-thiet-lap-tu-dong-hoa-trong-ung-dung-javis-smart">https://javishome.vn/huong-dan-thiet-lap-tu-dong-hoa-trong-ung-dung-javis-smart</a></p>
+<h2 id="thiet-bi-thay-oi-trang-thai">Thiết bị thay đổi trạng thái</h2>
+<p>Mục đích của tính năng này cho phép thiết lập nhiều tự động hóa phức tạp (có thể nói là tổng hợp tất cả các tính năng tự động hóa ở phía trên).</p>
+<h3 id="861">8.6.1</h3>
+<ul>
+<li>
+<p>“Mở cửa, đóng cửa” </p>
+</li>
+<li>
+<p>“Có chuyển động, không chuyển động” </p>
+</li>
+<li>
+<p>“Cảm biến bật, cảm biến tắt” </p>
+</li>
+<li>
+<p>“Công tắc bật, công tắc tắt”</p>
+</li>
+<li>
+<p>“Đèn bật, đèn tắt”</p>
+</li>
+<li>
+<p>“Tivi bật, tivi tắt”</p>
+</li>
+<li>
+<p>“Rèm mở, Rèm đóng”</p>
+</li>
+</ul>
+<p>Với các mục trên có thể setup các tự động hóa tương ứng với tiêu đề để thực hiện các hành động tương ứng.</p>
+<p>Ví dụ: “Cửa mở”</p>
+<ul>
+<li>Chọn mục “Cửa mở”</li>
+<li>“Tên tự động”: đặt tên cho tự động hóa</li>
+<li>“Cảm biến cửa”: chọn cảm biến cửa mà bạn muốn khi cửu đó được mở sẽ thực hiện hành động tương ứng.</li>
+<li>“Thời gian hiệu lực”: là thời gian Automation có thể hoạt động, nếu muốn Automation hoạt động cả ngày thì để mặc định.</li>
+<li>“Độ trễ”: thời gian chờ để thực hiện hành động sau khi cửa được mở.</li>
+<li>“Hành động”: chọn một trong  những hành động mà bạn muốn thực hiện có trong danh sách.</li>
+</ul>
+<h3 id="remote-nut-kich-ban">“Remote, nút kịch bản”</h3>
+<p>Chức năng này cho phép thiết lập nút kịch bản, remote để thực hiện các hành động tương ứng.Ví dụ: ấn nút về nhà thì bật đèn, mở rèm, bật điều hòa...Ấn nút “Ra ngoài” thì tắt toàn bộ thiết bị, đóng rèm…</p>
+<ul>
+<li>“Tên tự động”: Đặt tên cho tự động hóa</li>
+<li>“Remote, Nút kịch bản”: Chọn thiết bị tương ứng</li>
+<li>“Trạng thái kích hoạt”: Chọn trạng thái mà bạn muốn thiết lập với nút kịch bản hoặc remote đó.</li>
+<li>“Thời gian hiệu lực”: thời gian cho phép Automation hoạt động</li>
+<li>“Độ trễ”: Thời gian chờ để thực hiện hành động tương ứng khi kích hoạt nút kịch bản hoặc remote.</li>
+<li>“Hành động”: chọn hành động thực hiện mà bạn muốn thiết lập.</li>
+</ul>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+  <footer class="md-footer">
+    
+      <div class="md-footer-nav">
+        <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+          
+            <a href="../create-script/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+              <div class="md-footer-nav__button md-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+              </div>
+              <div class="md-footer-nav__title">
+                <div class="md-ellipsis">
+                  <span class="md-footer-nav__direction">
+                    Previous
+                  </span>
+                  Hướng dẫn tạo kịch bản trong ứng dụng Javis Smart
+                </div>
+              </div>
+            </a>
+          
+          
+            <a href="../update-new-device/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+              <div class="md-footer-nav__title">
+                <div class="md-ellipsis">
+                  <span class="md-footer-nav__direction">
+                    Next
+                  </span>
+                  Cập nhập thiết bị mới từ Javis HC vào ứng dụng Javis Smart
+                </div>
+              </div>
+              <div class="md-footer-nav__button md-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+              </div>
+            </a>
+          
+        </nav>
+      </div>
+    
+    <div class="md-footer-meta md-typeset">
+      <div class="md-footer-meta__inner md-grid">
+        <div class="md-footer-copyright">
+          
+          Made with
+          <h1>hallo MeoBeo</h1>
+          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+            MeoBeo
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.93c04032.min.js"></script>
+      <script src="../assets/javascripts/bundle.83e5331e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.8c7e0a7e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

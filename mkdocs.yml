@@ -1,0 +1,39 @@
+site_name: Javis Smart
+nav:
+    - Home: index.md
+    - Các bước kết nối mạng cho Javis HC: network-connections.md
+    - Cài ứng dụng Javis Smart và đăng ký tài khoản: install-app.md
+    - Kết nối Javis HC vào ứng dụng Javis Smart trên điện thoại: connect-with-app.md
+    - Các thao tác với phòng trong Javis Smart: work-with-room.md
+    - Thêm công tắc Zigbee vào ứng dụng Javis Smart: add-zigbee.md
+    - Kết nối cảm biến Zigbee vào ứng dụng Javis Smart: connection-with-zigbee.md 
+    - Hướng dẫn tạo kịch bản trong ứng dụng Javis Smart: create-script.md 
+    - Hướng dẫn thiết lập tự động hóa trong ứng dụng Javis Smart: automation.md
+    - Cập nhập thiết bị mới từ Javis HC vào ứng dụng Javis Smart: update-new-device.md
+    - Điều khiển bằng giọng nói trong ứng dụng Javis Smart: voice-control.md
+    - Thêm thiết bị vào màn hình yêu thích và các thao tác cơ bản trong ứng dụng Javis Smart: add-device.md
+    - Thêm công tắc Wifi Javis vào ứng dụng Javis Smart: add-switch.md 
+    - Cấu hình MQTT cho công tắc Wifi: mqtt-wifi.md
+    # - Branch1: 
+    #     -  Leaves1: branch1/leaves1.md
+    # - Branch2:
+    #     - Leaves2: branch2/leaves2.md
+    #     - Leaves1: branch2/leaves1.md
+
+extra_css:
+    - css/extra.css
+
+theme:
+    name: material
+    custom_dir: my_theme/
+    highlightjs: true
+    
+    # include_homepage_in_sidebar: true
+    hljs_languages:
+        - yaml
+        - rust
+    shortcuts:
+        help: 191    # ?
+        next: 78     # n
+        previous: 80 # p
+        search: 83   # s
